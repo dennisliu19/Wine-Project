@@ -1,4 +1,7 @@
-winedata <- read.csv("~/Desktop/Final Project/winemag-data_first150k.csv")
+setwd("~/Desktop/Wine-Project")
+
+
+winedata <- read.csv("winemag-data_first150k.csv")
 
 
 countrysummary <- winedata %>% 
@@ -15,4 +18,6 @@ varietysummary <- wineupdate %>%
 
 varietysummary <- varietysummary[order(-varietysummary$no_rows),]
 
-vari
+varietyselection <- varietysummary$variety[1:8]
+
+wineupdate <- filter(wineupdate, wineupdate$variety %in% varietyselection)
