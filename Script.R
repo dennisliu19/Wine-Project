@@ -28,7 +28,7 @@ wineupdate <- mutate(wineupdate, countrycat = ifelse(country %in% c("US","Argent
 
 # ggboxplot(wineupdate, x = "category", y = "points", color = "countrycat",
 #           palette = c("#00AFBB", "#E7B800"))
-# interaction.plot(wineupdate$category,wineupdate$countrycat,wineupdate$points)
+ interaction.plot(wineupdate$category,wineupdate$countrycat,wineupdate$points)
 
 winetruc <- wineupdate[,c(2,5,6,10,12,13)]
 
