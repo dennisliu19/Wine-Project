@@ -65,59 +65,6 @@ plotMCMC( mcmcCoda ,
           x2contrasts=x2contrasts , 
           x1x2contrasts=x1x2contrasts ,
           saveName=fileNameRoot , saveType=graphFileType )
-#------------------------------------------------------------------------------- 
-# # Other specific comparisons of cells:
-# if ( fileNameRoot == "SalaryNormalHom-" ) {
-#   # THIS x1level minus THAT x1level at AT x2level:
-#   THISx1 = "Full"
-#   THATx1 = "Assis"
-#   ATx2 = "CHEM"
-#   THISidx = which(levels(myDataFrame[,x1Name])==THISx1)
-#   THATidx = which(levels(myDataFrame[,x1Name])==THATx1)
-#   ATidx   = which(levels(myDataFrame[,x2Name])==ATx2)
-#   openGraph(height=4,width=4)
-#   compInfo = plotPost( 
-#     as.matrix(mcmcCoda)[,paste("m[",THISidx,",",ATidx,"]",sep="")] -
-#       as.matrix(mcmcCoda)[,paste("m[",THATidx,",",ATidx,"]",sep="")] , 
-#     main=paste(THISx1,"-",THATx1,"@",ATx2) , 
-#     xlab=paste("Difference in",yName) , 
-#     compVal=0 ,ROPE=c(-1000,1000) )
-#   show(compInfo)
-#   saveGraph(file=paste(fileNameRoot,THISx1,"-",THATx1,"At",ATx2,sep=""),
-#             type=graphFileType)
-#   # THIS x1level minus THAT x1level at AT x2level:
-#   THISx1 = "Full"
-#   THATx1 = "Assis"
-#   ATx2 = "PSY"
-#   THISidx = which(levels(myDataFrame[,x1Name])==THISx1)
-#   THATidx = which(levels(myDataFrame[,x1Name])==THATx1)
-#   ATidx   = which(levels(myDataFrame[,x2Name])==ATx2)
-#   openGraph(height=4,width=4)
-#   compInfo = plotPost( 
-#     as.matrix(mcmcCoda)[,paste("m[",THISidx,",",ATidx,"]",sep="")] -
-#       as.matrix(mcmcCoda)[,paste("m[",THATidx,",",ATidx,"]",sep="")] , 
-#     main=paste(THISx1,"-",THATx1,"@",ATx2) , 
-#     xlab=paste("Difference in",yName) , 
-#     compVal=0 ,ROPE=c(-1000,1000) )
-#   show(compInfo)
-#   saveGraph(file=paste(fileNameRoot,THISx1,"-",THATx1,"At",ATx2,sep=""),
-#             type=graphFileType)
-#   # THIS x2level minus THAT x2level at AT x1level:
-#   THISx2 = "PSY"
-#   THATx2 = "ENG"
-#   ATx1 = "Full"
-#   THISidx = which(levels(myDataFrame[,x2Name])==THISx2)
-#   THATidx = which(levels(myDataFrame[,x2Name])==THATx2)
-#   ATidx   = which(levels(myDataFrame[,x1Name])==ATx1)
-#   openGraph(height=4,width=4)
-#   compInfo = plotPost( 
-#     as.matrix(mcmcCoda)[,paste("m[",ATidx,",",THISidx,"]",sep="")] -
-#       as.matrix(mcmcCoda)[,paste("m[",ATidx,",",THATidx,"]",sep="")] , 
-#     main=paste(THISx2,"-",THATx2,"@",ATx1) , 
-#     xlab=paste("Difference in",yName) , 
-#     compVal=0 ,ROPE=c(-1000,1000) )
-#   show(compInfo)
-#   saveGraph(file=paste(fileNameRoot,THISx2,"-",THATx2,"At",ATx1,sep=""),
-#             type=graphFileType)
-# }
-#------------------------------------------------------------------------------- 
+
+
+
