@@ -1,4 +1,4 @@
-setwd("~/Desktop/Wine-Project")
+setwd("~/Desktop/Wine-Project/Dataset and Script")
 # Example for Jags-Ymet-Xnom2fac-MnormalHom.R 
 #------------------------------------------------------------------------------- 
 # Optional generic preliminaries:

@@ -1,4 +1,4 @@
-setwd("~/Desktop/Wine-Project")
+setwd("~/Desktop/Wine-Project/Dataset and Script")
 library("dplyr")
 if("manipulate" %in% installed.packages())(install.packages("manipulate"))
 if("mosaic" %in% installed.packages())(install.packages("mosaic"))
